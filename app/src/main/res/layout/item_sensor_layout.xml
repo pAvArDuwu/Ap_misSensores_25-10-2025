@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 1. Nombre del Sensor -->
+        <TextView
+            android:id="@+id/tvSensorNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Sensor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <!-- 2. Fabricante -->
+        <TextView
+            android:id="@+id/tvSensorFabricante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fabricante"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- 3. Tipo de Sensor -->
+        <TextView
+            android:id="@+id/tvSensorTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo: 1"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- 4. Consumo de Potencia -->
+        <TextView
+            android:id="@+id/tvSensorPotencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Potencia: 0.5 mA"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
